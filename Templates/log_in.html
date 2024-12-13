@@ -1,0 +1,24 @@
+{% extends "base.html" %} {% load static %}
+
+{% block content %}
+
+<div class="wrapper">
+    <h1>Login</h1>
+    <p id="error-message"></p>
+    <form id="form" method="post" action="{% url 'home' %}">
+      {% csrf_token %}
+      <div>
+        <label for="email-input" class="label_icon">
+          <span>@</span>
+        </label>
+        <input type="email" name="email" id="email-input" placeholder="Email" class="input_icons" required>
+      </div>
+      <div>
+        <label for="password-input" class="label_icon">
+        </label>
+        <input type="password" name="password" id="password-input" placeholder="Password" class="input_icons" required>
+      </div>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+  {% endblock %}

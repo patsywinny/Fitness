@@ -1,0 +1,137 @@
+{% extends "base.html" %} {% load static %}
+
+{% block content %}
+<div class="video_container">
+    <video autoplay loop muted playsinline class="bg_video">
+        <source src="{%static 'my_app/videos/fit_vid1.mp4' %}" type="video/mp4">
+    </video>
+    <div class="content">
+        <h2>Transform Your Fitness Journey Today!</h2>
+        <p>Discover a personalized workout experience designed just for you. Achieve your fitness goals with tailored plans, meal suggestions, and progress tracking.</p>
+        <a href="{% url 'contact_us' %}" ><button>Learn More</button></a>
+        <a href="{% url 'sign_up' %} " ><button>Sign up</button></a>
+    </div>
+</div>
+<div class="content_second">
+    <div class="second-content">
+        <h2>Achieve Your Fitness Goals with Ease</h2>
+    </div>
+    <div class="third-content">
+        <div class="fouth-content1">
+            <img src="{%static 'images/selecting1.jpeg'%}" alt="">
+            <h2>Step-by-Step Workout Selection Made Simple</h2>
+            <p>Choose a workout plan that fits your goals.</p>
+            <a href="{% url 'training' %} " ><button>Get Started</button></a>
+        </div>
+        <div class="fouth-content2">
+            <img src="{%static 'images/follow_along1.jpg'%}" alt="">
+            <h2>Follow Along with Expert Video Guidance</h2>
+            <p>Engage with instructional videos to maximize your workouts.</p>
+            <a href="{% url 'training' %} " ><button>Explore</button></a>
+        </div>
+        <div class="fouth-content3">
+            <img src="{%static 'images/tracking1.jpg'%}" alt="">
+            <h2>Track Your Progress and Stay Motivated</h2>
+            <p>Monitor your achievements with our progress tracker.</p>
+            <a href="{% url 'training' %} " ><button>start now</button></a>
+        </div>
+    </div>
+</div>
+<div class="content_third">
+    <video src="{%static 'my_app/videos/workout3.mp4'%}" autoplay loop muted playsinline width="250px" h></video>
+    <div class="content_third1">
+        <h2 class="header-1">Transform Your Fitness Journey with Personalized Workout Plans and Video Guidance</h2>
+        
+        <div class="content_third2">
+            <div class="content_third3">
+                <img src="{%static 'images/plan1.jpg'%}" alt="">
+                <h3>Tailored Routines</h3>
+                <p>Achieve your goals with workouts crafted to suit your individual needs and preferences.</p>
+                <a href="{% url 'nutrition' %} " ><button>Explore</button></a>
+            </div>
+            <div class="content_third3">
+                <img src="{%static 'images/follow_along5.jpeg'%}" alt="">
+                <h3>Video Guidance</h3>
+                <p>Follow along with expert-led videos that make exercising easier and more enjoyable.</p>
+                <a href="{% url 'training' %} " ><button>Explore</button></a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content_fourth">
+    <div class="content_fourth1">
+        <h2 class="header-3">Personalized Meal Plans for Your Fitness Goals</h2>
+        <div class="content_fourth2">
+            <div class="content_fourth3">
+                <h2>Healthy Choices</h2>
+                <p>Discover meals that support your journey to a healthier lifestyle.</p> 
+                <img src="{%static 'images/recipe1.jpeg'%}" alt="">  
+            </div>
+            <div class="content_fourth3">
+                <h2>Easy Recipes</h2>
+                <p>Quick and simple recipes to keep you on track.</p> 
+                <img src="{%static 'images/recipe2.jpeg'%}" alt="">  
+            </div>
+        </div>
+        <a href="{% url 'nutrition' %}  " class="btn btn-primary">Check out</a>
+    </div>
+    <div class="content_four">
+        <video src="{%static 'my_app/videos/nutrition1.mp4'%}" autoplay loop muted playsinline width="400px" ></video>
+    </div>
+    
+</div>
+
+
+<div class="content_sixth">
+    <div class="content_sixth1">
+        <h2>Unlock Your Potential with Gamification</h2>
+    </div>
+    <div class="content_sixth2">
+        <div class="content_sixth3">
+            <div class="content_sixth4">
+                <img src="{%static 'images/motivated1.avif'%}" width="200px">
+                <h2>Stay Motivated</h2>
+                <p>Earn badges as you reach your goals, keeping you motivated every step of the way.</p>
+            </div>
+            <div class="content_sixth4">
+                <img src="{%static 'images/tracking2.gif'%}" width="200px">
+                <h2>Track Your Progress</h2>
+                <p>Visualize your achievements and see how far you’ve come with our progress tracking.</p>
+            </div>
+        </div>
+        <div class="content_sixth5">
+            <img src="{%static 'images/medal1.gif'%}" width="400px" height="400vh">
+        </div>
+        <div class="content_sixth3">
+            <div class="content_sixth4">
+                <img src="{%static 'images/challenge1.jpeg'%}" width="200px">
+                <h2>Join the Challenge</h2>
+                <p>Participate in challenges to compete with friends and push each other towards fitness success.</p>
+            </div>
+            <div class="content_sixth4">
+                <img src="{%static 'images/Podium – Burst Animation.gif'%}" width="200px">
+                <h2>Celebrate Your Wins</h2>
+                <p>Share your achievements on social media and inspire others to join your fitness journey.</p>
+            </div>
+        </div>
+    </div>
+    <a href="{% url 'training' %}  " class="btn btn-primary">start today</a>
+   <a href="{% url 'contact_us' %}  " class="btn btn-primary">Learn More</a>
+
+</div>
+
+<div class="content_seventh">
+    <div class="content_seventh1">
+        <h2>Transform Your Fitness Journey Today</h2>
+        <p>Join us now for personalized workout plans and meal suggestions tailored just for you!</p>
+        <a href="{% url 'sign_up' %}  " class="btn btn-primary">Register</a>
+        <a href="{% url 'contact_us' %}  " class="btn btn-primary">More info</a>
+    </div>
+    <div class="content_seventh2">
+        <img src="{%static 'images/gym-diet-cover-1.jpg'%}" width="400px" alt="">
+    </div>
+</div>
+
+
+
+{% endblock %}

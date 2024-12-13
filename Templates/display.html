@@ -1,0 +1,43 @@
+{% extends "base.html" %} {% load static %}
+
+{% block content %}
+<h1>CONTACT US</h1>
+<br><br><br>
+<table class="table table-info ">
+<tr>
+    
+    <th>Username</th>
+    <th>Email</th>
+    <th>Password</th>
+    <th>Phone</th>
+    <th>Message</th>
+    <th>Action</th>
+   
+</tr>
+
+{% for x in contact %}
+    <tr>
+       
+        <td>{{ x.username }}</td>
+        <td>{{ x.email }}</td>
+        <td>{{ x.password }}</td>
+        <td>{{ x.phone}}</td>
+        <td>{{ x.message}}</td>
+        <td>
+            <a href="/edit2/{{ x.id }}" class="btn btn-warning">EDIT</a>
+            <a href="/delete_1/{{ x.id }}" class="btn btn-danger">DELETE</a>
+            
+        </td>
+       
+    </tr>
+
+{% endfor %}
+
+
+
+</table>
+
+
+
+
+{% endblock %}

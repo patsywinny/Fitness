@@ -1,0 +1,198 @@
+{% extends "base.html" %} {% load static %}
+
+{% block content %}
+<div class="content_training">
+    <div class="training_header">
+        <h2> meal Plans</h2>
+        <p>Explore our diverse meal plans designed to fit your unique fitness goals and preferences.</p>
+
+    </div>
+    <div class="content_training1">
+        <h2>Enjoy tailored meal Plans Designed Just for You</h2>
+        <div class="content_training2">
+            <div class="content_training3">
+                <img src="{%static 'images/recipe1.jpeg'%}" alt="" width="380px">
+                <h3>Enjoy our unique meal plans</h3>
+                <p>Our meal plans are reviewed to fit your unique fitness goals.</p>
+                <a href=" " class="btn btn-primary">Learn More</a>
+            </div>
+            <div class="content_training3">
+                <img src="{%static 'images/suggestion1.jpg'%}" alt="" width="380px">
+                <h3>Achieve Your Goals with Personalized Meal Suggestions</h3>
+                <p>Our workout plans are customized to fit your fitness level and preferences.</p>
+                <a href=" " class="btn btn-primary">Learn More</a>
+            </div>
+            <div class="content_training3">
+                <img src="{%static 'images/expert1.png'%}" alt="" width="380px">
+                <h3>Get Expert Nutrition Guidance from Certified Professionals</h3>
+                <p>Receive meal plans that align with your fitness objectives for optimal results.</p>
+                <a href=" " class="btn btn-primary">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- <div class="video_container">
+    <h2>workout for beginners </h2>
+    <div class="video_1">
+        <video src=""></video>
+        <video src=""></video>{%https://www.youtube.com/watch?v=lS6qBCIVFws%}
+        <video src=""></video>
+
+    </div>
+    <h2>Intermediate workouts</h2>
+    <div class="video_1">
+        <video src=""></video>
+        <video src=""></video>
+        <video src=""></video>
+    </div>
+    <h2>Advanced workouts </h2>
+    <div class="video_1">
+        <video src=""></video>
+        <video src=""></video>
+        <video src=""></video>
+    </div>
+    <h2>Pilate workouts</h2>
+    <div class="video_1">
+        <video src=""></video>
+        <video src=""></video>
+        <video src=""></video>
+    </div>
+    <div class="video_1">
+        <video src=""></video>
+        <h2>full body workouts </h2>
+    </div>
+    <h2>upper body workouts </h2>
+    <div class="video_1">
+        <video src=""></video>
+        <video src=""></video>
+        <video src=""></video>
+    </div>
+    <h2>lower body workouts </h2>
+    <div class="video_1">
+        <video src=""></video>
+        <video src=""></video>
+        <video src=""></video>
+       
+    </div>
+</div> -->
+
+
+
+
+
+<div class="slide-container swiper">
+    <div class="slide-content">
+        <div class="card-wrapper swiper-wrapper">
+            <div class="card swiper-slide">
+                <div class="image-content">
+                    <span class="overlay" id="overlay-1"></span>
+  
+                    <div class="card-image">
+                        <img src="{%static 'images/suggestion1.jpg'%}" alt="" class="card-img">
+                    </div>
+                </div>
+  
+                <div class="card-content">
+                    <h2 class="name"> Weight Loss Meal Plan</h2>
+                    <p class="description">A calorie-conscious plan focused on whole, nutrient-dense foods to promote fat loss while maintaining energy for workouts</p>
+  
+                    <button class="button" id="btn1">Start now</button>
+                </div>
+            </div>
+            <div class="card swiper-slide">
+                <div class="image-content">
+                    <span class="overlay" id="overlay-2"></span>
+  
+                    <div class="card-image">
+                        <img src="{%static 'images/recipe1.jpeg'%}" alt="" class="card-img" width="">
+                    </div>
+                </div>
+  
+                <div class="card-content">
+                    <h2 class="name">Post-Workout Recovery Plan</h2>
+                    <p class="description">Focused on replenishing glycogen stores and promoting muscle recovery after intense workouts </p>
+  
+                    <button class="button" id="btn2">start now</button>
+                </div>
+            </div>
+            <div class="card swiper-slide">
+                <div class="image-content">
+                    <span class="overlay" id="overlay-3"></span>
+  
+                    <div class="card-image">
+                        <img src="{%static 'images/recipe5.jpeg'%}" alt="" class="card-img">
+                    </div>
+                </div>
+  
+                <div class="card-content">
+                    <h2 class="name">High-Protein Plan</h2>
+                    <p class="description"> A meal plan focusing on lean proteins to build muscle and aid in recovery.</p>
+  
+                    <button class="button" id="btn3">start now</button>
+                </div>
+            </div>
+            <div class="card swiper-slide">
+                <div class="image-content">
+                    <span class="overlay" id="overlay-4"></span>
+  
+                    <div class="card-image">
+                        <img src="{%static 'images/gym-diet-cover-1.jpg'%}" alt="" class="card-img">
+                    </div>
+                </div>
+  
+                <div class="card-content">
+                    <h2 class="name">Low-Carb Plan</h2>
+                    <p class="description">  A plan designed for fat loss, with reduced carbs and increased healthy fats</p>
+  
+                    <button class="button" id="btn4">start now</button>
+                </div>
+            </div>
+            <div class="card swiper-slide">
+                <div class="image-content">
+                    <span class="overlay" id="overlay-5"></span>
+  
+                    <div class="card-image">
+                        <img src="{%static 'images/recipe3.jpeg'%}" alt="" class="card-img">
+                    </div>
+                </div>
+  
+                <div class="card-content">
+                    <h2 class="name">Vegan Athlete Meal Plan</h2>
+                    <p class="description">A plant-based plan providing essential nutrients for energy and recovery, suitable for vegan fitness enthusiasts </p>
+  
+                    <button class="button" id="btn5">Start now</button>
+                </div>
+            </div>
+            <div class="card swiper-slide">
+                <div class="image-content">
+                    <span class="overlay" id="overlay-6"></span>
+  
+                    <div class="card-image">
+                        <img src="{%static 'images/recipe4.jpeg'%}" alt="" class="card-img">
+                    </div>
+                </div>
+  
+                <div class="card-content">
+                    <h2 class="name"> Balanced Meal Plan for General Fitness</h2>
+                    <p class="description">A balanced diet to maintain overall health, fitness, and energy for moderate physical activity. </p>
+  
+                    <button class="button" id="btn6">start now</button>
+                </div>
+            </div>
+  
+        </div>
+    </div>
+  
+    <div class="swiper-button-next swiper-navBtn"></div>
+    <div class="swiper-button-prev swiper-navBtn"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+
+
+
+
+{% endblock %}

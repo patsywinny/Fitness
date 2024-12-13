@@ -1,0 +1,41 @@
+{% extends "base.html" %} {% load static %}
+
+{% block content %}
+<h1>MEMBERS</h1>
+<br><br><br>
+<table class="table table-info ">
+<tr>
+    <th>Fullname</th>
+    <th>Username</th>
+    <th>Email</th>
+    <th>Password</th>
+    <th>Repeat password</th>
+    <th>Action</th>
+   
+</tr>
+
+{% for x in member %}
+    <tr>
+        <td>{{ x.fullname }}</td>
+        <td>{{ x.username }}</td>
+        <td>{{ x.email }}</td>
+        <td>{{ x.password }}</td>
+        <td>{{ x.repeat_password }}</td>
+        <td>
+            <a href="/edit/{{ x.id }}" class="btn btn-warning">EDIT</a>
+            <a href="/delete/{{ x.id }}" class="btn btn-danger">DELETE</a>
+            
+        </td>
+       
+    </tr>
+
+{% endfor %}
+
+
+
+</table>
+
+
+
+
+{% endblock %}
